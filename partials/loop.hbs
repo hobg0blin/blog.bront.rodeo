@@ -1,0 +1,47 @@
+<article class="feed {{visibility}} {{post_class}}">
+
+    <div class="feed-calendar">
+        <div class="feed-calendar-day">
+            {{date published_at format="DD"}}
+        </div>
+        <div class="feed-calendar-month">
+            {{date published_at format="MMM"}}
+        </div>
+    </div>
+
+    <a href="{{url}}"><h2 class="feed-title">{{title}}</h2>
+    <div class="feed-right">
+        {{> "icons/star"}}
+        {{> "icons/chevron-right"}}
+    </div>
+    </a>
+
+
+    <div class="w-100">
+        <div class="feed-excerpt {{#has tag="note,link"}}show-all-content{{/has}}">
+       {{#if custom_excerpt}}
+            {{custom_excerpt}}
+        {{else has tag="note,link"}}
+            {{content}}
+        {{else}}
+            {{content words="200"}}
+        {{/if}}
+        </div>
+        {{^has tag="note,link"}}
+        <div class="post-link">
+            <a href="{{url}}" class="feed-more">Read more
+            <div class="feed-length">
+                {{reading_time}}
+            </div></a>
+        </div>
+        {{/has}}
+
+    </div>
+    
+    <div class="tag tag-list">
+        {{#foreach tags}}
+            <a href="{{url}}" class="tag tag-list-item">{{name}}</a>
+        {{/foreach}}
+    </div>
+
+</article>
