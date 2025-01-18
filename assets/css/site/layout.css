@@ -1,3 +1,9 @@
+
+.post-feed {
+    width: 65%;
+    margin: 0 auto;
+}
+
 .site {
     display: flex;
     flex-direction: column;
@@ -16,5 +22,8 @@
 @media (max-width: 767px) {
     .site-content {
         padding: 3rem 0;
+    }
+    .post-feed {
+        width: 90%;
     }
 }

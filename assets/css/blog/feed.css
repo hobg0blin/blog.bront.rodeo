@@ -10,6 +10,10 @@
         margin-top: 1rem;
         margin-bottom: 1rem !important;
     }
+    .tag-list {
+        margin-left: auto;
+        max-width: 30%;
+    }
 
 }
 
@@ -55,7 +59,7 @@
     margin-bottom: 0;
     overflow: hidden;
     font-family: var(--gh-font-body, var(--font-sans));
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 1.3;
     color: purple;
@@ -103,7 +107,7 @@
 }
 
 .feed-excerpt {
-    width: 80%;
+    width: 75%;
     border-left: 2px solid gray; 
     padding: 0 2rem;
     margin-top: 2rem;
@@ -114,7 +118,8 @@
         font-size: 2.4rem;
     }
     * {
-        font-size: 1.4rem !important;
+        font-size: 1.6rem !important;
+        line-height:1.2;
     }
     img {
         max-width: 50%;
