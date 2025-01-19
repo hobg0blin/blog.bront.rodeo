@@ -1,6 +1,5 @@
 <article class="single {{post_class}}">
 
-    {{#match @page.show_title_and_feature_image}}
         <header class="single-header gh-canvas">
             {{#is "post"}}
             <div class="single-meta">
@@ -52,7 +51,6 @@
             {{/unless}}
             {{/if}}
         </header>
-    {{/match}}
 
     <div class="single-content gh-content gh-canvas">
         {{content}}
